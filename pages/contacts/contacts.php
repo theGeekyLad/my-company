@@ -39,8 +39,8 @@
         <li class="collection-item avatar">
           <i class="material-icons circle">folder</i>
           <span class="title"><?php echo $arr[0] ?></span>
-          <p><?php $arr[1] ?><br>
-            <?php $arr[2] ?>
+          <p><?php echo $arr[1] ?><br>
+            <?php echo $arr[2] ?>
           </p>
           <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
         </li>
