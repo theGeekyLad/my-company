@@ -7,8 +7,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Permanent+Marker" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="../../lib/materialize/css/materialize.min.css"
-    media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../../lib/materialize/css/materialize.min.css" media="screen,projection" />
   <!-- My CSS -->
   <link type="text/css" rel="stylesheet" href="../../css/comms.css" />
   <link type="text/css" rel="stylesheet" href="../../pages/about/about.css" />
@@ -31,7 +30,42 @@
   </nav>
 
   <div class="container">
-    <!--  -->
+    <ul class="collection">
+      <?php
+      $myfile = fopen("../../assets/contacts.txt", "r") or die("Unable to open file!");
+      while (!feof($myfile)) {
+        $arr = explode(",", fgets($myfile));
+      ?>
+        <li class="collection-item avatar">
+          <i class="material-icons circle">folder</i>
+          <span class="title"><?php $arr[0] ?></span>
+          <p><?php $arr[1] ?><br>
+            <?php $arr[2] ?>
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+      <?php
+      }
+      fclose($myfile);
+      ?>
+      <!-- <li class="collection-item avatar">
+        <i class="material-icons circle green">insert_chart</i>
+        <span class="title">Title</span>
+        <p>First Line <br>
+          Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle red">play_arrow</i>
+        <span class="title">Title</span>
+        <p>First Line <br>
+          Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li> -->
+    </ul>
+
   </div>
 
   <!-- <script src="external/jquery/jquery.js"></script>
