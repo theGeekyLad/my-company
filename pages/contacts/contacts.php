@@ -30,6 +30,7 @@
   </nav>
 
   <div class="container">
+    <h4 class="my-title text-center">Contacts</h4>
     <ul class="collection">
       <?php
       $myfile = fopen("../../assets/contacts.txt", "r") or die("Unable to open file!");
