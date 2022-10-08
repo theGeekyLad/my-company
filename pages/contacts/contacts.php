@@ -37,7 +37,7 @@
         $arr = explode(",", fgets($myfile));
       ?>
         <li class="collection-item avatar">
-          <i class="material-icons circle">folder</i>
+          <i class="material-icons person">folder</i>
           <span class="title"><?php echo $arr[0] ?></span>
           <p><?php echo $arr[1] ?><br>
             <?php echo $arr[2] ?>
