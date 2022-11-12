@@ -7,6 +7,7 @@
             <!-- hide-on-med-and-down -->
             <li><a href="../../index.html">Home</a></li>
             <li><a href="../about/about.php">About</a></li>
+            <li><a href="../products/products.php">Products</a></li>
             <li><a href="../news/news.html">News</a></li>
             <li><a href="../contacts/contacts.php">Contacts</a></li>
             <li><a href="../users/users.php">Users</a></li>
